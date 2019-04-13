@@ -1,0 +1,44 @@
+--- #Commmon Configuration
+tomcat:
+  portRangeStart:
+    8000
+  portRangeEnd:
+    8005
+
+app:
+  enableGUI:
+    true
+--- #Unit Test Configuration
+spring:
+  profiles: unit-test
+name: unit-test-YAML
+environment: unit-test
+app:
+  enableGUI:
+    false
+--- #Integration Test Configuration
+spring:
+  profiles: integration-test
+name: integration-test-YAML
+environment: integration-test
+app:
+  enableGUI:
+    false
+--- #Acceptance Test Configuration
+spring:
+  profiles: io.gccs.diagnostics.acceptance-test
+name: io.gccs.diagnostics.acceptance-test-YAML
+environment: io.gccs.diagnostics.acceptance-test
+--- #Dev configuration
+spring:
+  profiles: dev
+name: dev-YAML
+environment: dev
+--- #Prod Configuration
+spring:
+  profiles: prod
+name: prod-YAML
+environment: production
+
+
+

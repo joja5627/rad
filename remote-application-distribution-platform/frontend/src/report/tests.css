@@ -1,0 +1,101 @@
+.test{
+    border-bottom: 1px ridge lightgray;
+    width: 100%;
+    text-align: center;
+}
+
+.testStatus{
+    float: right;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.testStatus.Pass{
+    color: limegreen;
+}
+.testStatus.Fail{
+    color: red;
+}
+.testStatus.Resolved{
+    color: #0080FF;
+}
+.testStatus.Workaround{
+    color: gold;
+}
+
+.testNum{
+    float: left;
+}
+
+.icon{
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+
+.moreInfo{
+    display:block;
+    border: 1px solid black;
+    margin: 15px;
+    margin-left: 50px;
+    padding-right:60px;
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+/*.circle {*/
+    /*height: 14px;*/
+    /*width: 14px;*/
+    /*background-color: #bbb;*/
+    /*border-radius: 50%;*/
+    /*display: inline-block;*/
+    /*position: relative;*/
+    /*top: 1.5px;*/
+    /*margin-right: 3px;*/
+/*}*/
+
+.circle{
+    height: 14px;
+    width: 14px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+}
+
+.circle.Pass, .tableEntry.Pass{
+    background-color: limegreen;
+}
+.circle.Fail, .tableEntry.Fail{
+    background-color: red;
+}
+.circle.Resolved, .tableEntry.Resolved{
+    background-color: #0080FF;
+}
+.circle.Workaround, .tableEntry.Workaround{
+    background-color: gold;
+}
+
+.statusTable{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.statusTable td, .statusTable th{
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.tableEntry.Pass{
+    background-color: limegreen;
+}
+.tableEntry.Fail{
+    background-color: #ff4c4c;
+}
+.tableEntry.Resolved{
+    background-color: cornflowerblue;
+}
+.tableEntry.Workaround {
+    background-color: gold;
+}
