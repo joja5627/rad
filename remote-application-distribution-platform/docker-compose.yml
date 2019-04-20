@@ -17,8 +17,22 @@ services:
     container_name: "mongodb"
     ports:
       - 27017:27017
+    # environment:
+      # - MONGO_INITDB_ROOT_USERNAME=admin
+      # - MONGO_INITDB_ROOT_PASSWORD=admin
+      # - MONGO_INITDB_DATABASE=db
+      # - MONGO_USERNAME=user
+      # - MONGO_PASSWORD=user
+    #    - MONGO_INITDB_ROOT_USERNAME=dev
+    #    - MONGO_INITDB_ROOT_PASSWORD=dev
+    #    - MONGO_INITDB_DATABASE=invoicer
     command: --smallfiles
 
+# -e MONGO_INITDB_ROOT_USERNAME=admin \
+# -e MONGO_INITDB_ROOT_PASSWORD=password \
+# -e MONGO_INITDB_DATABASE=abcd \
+# -e MONGO_USERNAME=foo \
+# -e MONGO_PASSWORD=barr123 \
 #  app:
 #    restart: always
 #    build: ./app
